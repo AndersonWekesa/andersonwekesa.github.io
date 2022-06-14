@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html style="background-color:hsl(0, 0%, 95%);">
+    <head>
+        <title>3-Column Card</title>
+        <style>
+            .pageheader{
+                margin-top: -8px;
+                margin-left: -8px;
+                margin-right: -8px;
+                height: 40px;
+                text-align: right;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                overflow: hidden;
+            }
+
+            .pageheader a {
+                float: right;
+                text-align: center;
+                padding: 14px 16px;
+            }
+
+            .pageheader a:hover {
+                float: right;
+                background-color:blue;
+                color: white;
+            }
+
+
+
+            body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .container{
+                width: 750px;
+                height: 500px;
+                display: flex;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;    
+            }
+
+            .sedans{
+                width: 250px;
+                height: 500px;
+                background-color: hsl(31, 77%, 52%);
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+
+            .suvs{
+                width: 250px;
+                height: 500px;
+                background-color: hsl(184, 100%, 22%);
+            }
+
+            .luxury{
+                width: 250px;
+                height: 500px;
+                background-color: hsl(179, 100%, 13%);
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            img{
+                margin-top: 30px;
+                margin-left: 30px;
+            }
+
+            @font-face {
+                font-family: Big Shoulders Display;
+                src: url(BigShouldersDisplay-VariableFont_wght.ttf);
+            }
+
+            h2{
+                font-family:  Big Shoulders Display;
+                font-size: xx-large;
+                margin-left: 30px;
+                color: hsl(0, 0%, 95%);
+            }
+
+            @font-face {
+                font-family: Lexend Deca;
+                src: url(LexendDeca-VariableFont_wght.ttf);
+            }
+            
+            p{
+                font-family: Lexend Deca;
+                text-align:center;
+                text-overflow: clip;    
+                color:hsla(0, 0%, 100%, 0.75)
+            }
+
+            button{
+                width: 150px;
+                height: 50px;
+                font-size: medium;
+                font-family: Big Shoulders Display;
+                margin-top: 150px;
+            }
+
+            .btncontainer{
+                text-align: center;
+            }
+
+            button{
+                background-color: hsl(0, 0%, 95%);
+                border-radius:25px 25px 25px 25px;
+                border: 0px;
+                font-weight: 700;
+                margin-top: 60px;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="pageheader">
+                <a href="index.html" style="font-size:23px; font-family:Verdana, Geneva, Tahoma, sans-serif;">
+                    3-Column Card
+                </a>
+                <a href="grid.html" style="font-size:23px; font-family:Verdana, Geneva, Tahoma, sans-serif;">
+                    Grid Layout
+                </a>
+            </div>
+        </header>
+
+
+
+        <div class="container">
+            <div class="sedans">
+                <img src="icon-sedans.svg">
+                <h2>SEDANS</h2>
+                <br/>
+                <p>
+                    Chose a Sedan for its affordability and excellent fuel economy. 
+                    Ideal for cruising in the city or on your next road trip
+                </p>
+                <div class="btncontainer">
+                    <button style="color:hsl(31, 77%, 52%);">Learn More</button>
+                </div>
+            </div>
+            <div class="suvs">
+                <img src="icon-suvs.svg">
+                <h2>SUVS</h2>
+                <br/>
+                <p>
+                    Take an SUV for its spacious interior, power, and versitility. 
+                    Perfect for your next family vacation and off-road adventures.
+                </p>
+                <div class="btncontainer">
+                    <button style="color:hsl(184, 100%, 22%);">Learn More</button>
+                </div>
+            </div>
+            <div class="luxury">
+                <img src="icon-luxury.svg">
+                <h2>LUXURY</h2>
+                <br/>
+                <p>
+                    Cruise in the best car brands without the bloated . 
+                    Enjoy the enhanced comfort of a luxury rental and arrive in style.
+                </p>
+                <div class="btncontainer">
+                    <button style="color:hsl(179, 100%, 13%); margin-top:79px;">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
