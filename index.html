@@ -4,6 +4,17 @@
     <head>
         <title>3-Column Card</title>
         <style>
+            html{
+                max-width:375px;
+                min-width:1140px;
+            }
+            
+            @media {max-width:375px) {
+                .container{
+                    display:flex; 
+                    flex-direction:column;
+            }
+                
             .pageheader{
                 margin-top: -8px;
                 margin-left: -8px;
@@ -109,7 +120,9 @@
             }
             
             button:hover{
-                background-color:blue;
+                background-color:transparent;
+                border:1px solid white;
+                cursor:pointer;
             }
 
             .btncontainer{
